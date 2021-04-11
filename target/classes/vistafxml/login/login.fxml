@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="parent" stylesheets="@../../css/style.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.login.LoginCtrl">
+    <center>
+        <HBox fx:id="pnlContent" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="border-pane" BorderPane.alignment="CENTER">
+            <children>
+                <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" HBox.hgrow="ALWAYS">
+                    <children>
+                        <AnchorPane fx:id="pnlLeft" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="back-left" VBox.vgrow="ALWAYS" />
+                    </children>
+                </VBox>
+                <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" HBox.hgrow="ALWAYS">
+                    <children>
+                        <HBox alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" styleClass="back-right">
+                            <children>
+                                <ImageView fx:id="btnMinimize" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#btnMinimizeOnClick" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../img/minimize.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="10.0" top="10.0" />
+                                    </HBox.margin>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </ImageView>
+                                <ImageView fx:id="btnMaxiMin" fitHeight="30.0" fitWidth="30.0" layoutX="610.0" layoutY="20.0" onMouseClicked="#btnMaxiMin" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../img/maximize.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="10.0" top="10.0" />
+                                    </HBox.margin>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </ImageView>
+                                <ImageView fx:id="btnClose" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#btnCloseOnClick" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../img/close.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="10.0" top="10.0" />
+                                    </HBox.margin>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </ImageView>
+                            </children>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                            <padding>
+                                <Insets right="20.0" />
+                            </padding>
+                        </HBox>
+                        <VBox fx:id="pnlFrom" alignment="CENTER" prefHeight="620.0" styleClass="back-right">
+                            <children>
+                                <StackPane>
+                                    <children>
+                                        <TextField fx:id="txtUser" promptText="Usuario" styleClass="fields" />
+                                        <ImageView fx:id="iconUser" fitHeight="30.0" fitWidth="30.0" layoutX="300.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER_LEFT">
+                                            <image>
+                                                <Image url="@../../img/login/user.png" />
+                                            </image>
+                                            <StackPane.margin>
+                                                <Insets left="10.0" />
+                                            </StackPane.margin>
+                                        </ImageView>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets bottom="20.0" />
+                                    </VBox.margin>
+                                </StackPane>
+                                <StackPane layoutX="160.0" layoutY="224.0">
+                                    <children>
+                                        <PasswordField fx:id="pwsUser" promptText="Password" styleClass="fields" />
+                                        <ImageView fx:id="iconPass" fitHeight="30.0" fitWidth="30.0" layoutX="300.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER_LEFT">
+                                            <image>
+                                                <Image url="@../../img/login/password.png" />
+                                            </image>
+                                            <StackPane.margin>
+                                                <Insets left="10.0" />
+                                            </StackPane.margin>
+                                        </ImageView>
+                                        <ImageView fx:id="btnEye" fitHeight="25.0" fitWidth="25.0" layoutX="20.0" layoutY="22.0" onMouseClicked="#btnEyeOnClick" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER_RIGHT">
+                                            <image>
+                                                <Image url="@../../img/login/eye-close.png" />
+                                            </image>
+                                            <StackPane.margin>
+                                                <Insets right="20.0" />
+                                            </StackPane.margin>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                        </ImageView>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets bottom="20.0" />
+                                    </VBox.margin>
+                                </StackPane>
+                                <Button fx:id="btnLogin" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnLoginOnClikc" styleClass="btn-login" text="Iniciar Sesion">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                    <VBox.margin>
+                                        <Insets bottom="20.0" />
+                                    </VBox.margin>
+                                </Button>
+                                <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="label-pass-forword" text="¿Olvisaste tu contraseña?" underline="true">
+                                    <VBox.margin>
+                                        <Insets bottom="20.0" />
+                                    </VBox.margin>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </Label>
+                                <Label fx:id="lblSmsErr" alignment="CENTER" contentDisplay="CENTER" layoutX="323.0" layoutY="364.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" styleClass="label-err" />
+                                <Label styleClass="label-normal" text="O" />
+                                <StackPane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity">
+                                    <children>
+                                        <Line endX="230.0" startX="-100.0" stroke="#0aaf60" strokeLineCap="BUTT" strokeWidth="2.0" StackPane.alignment="CENTER" />
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets bottom="20.0" />
+                                    </VBox.margin>
+                                </StackPane>
+                                <Button graphicTextGap="20.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" styleClass="btn-google" text="Iniciar sesión con Google">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                    <VBox.margin>
+                                        <Insets bottom="20.0" />
+                                    </VBox.margin>
+                                    <graphic>
+                                        <FontAwesomeIconView glyphName="GOOGLE" styleClass="icon-google" />
+                                    </graphic>
+                                </Button>
+                                <Button graphicTextGap="20.0" layoutX="160.0" layoutY="455.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" styleClass="btn-face" text="Iniciar sesión con Facebook">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                    <graphic>
+                                        <FontAwesomeIconView glyphName="FACEBOOK" styleClass="icon-face" />
+                                    </graphic>
+                                    <VBox.margin>
+                                        <Insets bottom="60.0" />
+                                    </VBox.margin>
+                                </Button>
+                            </children>
+                            <padding>
+                                <Insets left="150.0" right="150.0" />
+                            </padding>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </VBox>
+                        <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" styleClass="back-right" VBox.vgrow="ALWAYS" />
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </center>
+</BorderPane>

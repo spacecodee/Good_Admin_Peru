@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="pnlModal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" styleClass="modal" stylesheets="@../../css/style.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.modales.ModalAvisoCtrl">
+    <top>
+        <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" BorderPane.alignment="CENTER" />
+    </top>
+    <bottom>
+        <Pane prefHeight="100.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="btnAcept" layoutX="620.0" layoutY="25.0" mnemonicParsing="false" onAction="#btnAceptOnAction" styleClass="btn-acept" text="Aceptar">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+            </children>
+        </Pane>
+    </bottom>
+    <center>
+        <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fx:id="imgMensaje" fitHeight="256.0" fitWidth="256.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../img/modales/checked.png" />
+                    </image>
+                    <VBox.margin>
+                        <Insets bottom="20.0" />
+                    </VBox.margin>
+                </ImageView>
+                <Label fx:id="lblSms" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" styleClass="label-modal" text="Mensaje" />
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

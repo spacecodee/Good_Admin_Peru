@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.*?>
+<VBox maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefWidth="150.0" style="-fx-background-color: #efecee;" stylesheets="@../../css/style.css"
+      xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controlador.menu.LateralCtrl">
+    <children>
+        <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+              minWidth="-Infinity" VBox.vgrow="ALWAYS">
+            <children>
+                <Label maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0"
+                       prefWidth="60.0" VBox.vgrow="ALWAYS"/>
+            </children>
+            <VBox.margin>
+                <Insets bottom="40.0"/>
+            </VBox.margin>
+        </VBox>
+        <StackPane fx:id="pnlDash2" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+                   prefHeight="48.0">
+            <children>
+                <Label fx:id="lblDash" styleClass="lbl-pnl-add" text="DASHBOARD" StackPane.alignment="CENTER_LEFT">
+                    <StackPane.margin>
+                        <Insets left="10.0"/>
+                    </StackPane.margin>
+                </Label>
+            </children>
+            <VBox.margin>
+                <Insets bottom="5.0"/>
+            </VBox.margin>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </StackPane>
+        <StackPane fx:id="pnlUsers2" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+                   prefHeight="48.0">
+            <children>
+                <Label fx:id="lblUsers" styleClass="lbl-pnl-add" text="USUARIOS" StackPane.alignment="CENTER_LEFT">
+                    <StackPane.margin>
+                        <Insets left="10.0"/>
+                    </StackPane.margin>
+                </Label>
+            </children>
+            <VBox.margin>
+                <Insets bottom="5.0"/>
+            </VBox.margin>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </StackPane>
+        <StackPane fx:id="pnlProveedores" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+                   prefHeight="48.0">
+            <children>
+                <Label fx:id="lblProveedores" styleClass="lbl-pnl-add" text="PROVEEDORES"
+                       StackPane.alignment="CENTER_LEFT">
+                    <StackPane.margin>
+                        <Insets left="10.0"/>
+                    </StackPane.margin>
+                </Label>
+            </children>
+            <VBox.margin>
+                <Insets bottom="5.0"/>
+            </VBox.margin>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </StackPane>
+        <StackPane fx:id="pnlClients2" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+                   prefHeight="48.0">
+            <children>
+                <Label fx:id="lblCustomers" styleClass="lbl-pnl-add" text="CLIENTES" StackPane.alignment="CENTER_LEFT">
+                    <StackPane.margin>
+                        <Insets left="10.0"/>
+                    </StackPane.margin>
+                </Label>
+            </children>
+            <VBox.margin>
+                <Insets bottom="5.0"/>
+            </VBox.margin>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </StackPane>
+        <StackPane fx:id="pnlProducts2" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+                   prefHeight="48.0">
+            <children>
+                <Label fx:id="lblProductos" styleClass="lbl-pnl-add" text="PRODUCTOS" StackPane.alignment="CENTER_LEFT">
+                    <StackPane.margin>
+                        <Insets left="10.0"/>
+                    </StackPane.margin>
+                </Label>
+            </children>
+            <VBox.margin>
+                <Insets bottom="5.0"/>
+            </VBox.margin>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </StackPane>
+        <StackPane fx:id="pnlReports2" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+                   prefHeight="48.0">
+            <children>
+                <Label fx:id="lblReports" styleClass="lbl-pnl-add" text="REPORTES" StackPane.alignment="CENTER_LEFT">
+                    <StackPane.margin>
+                        <Insets left="10.0"/>
+                    </StackPane.margin>
+                </Label>
+            </children>
+            <VBox.margin>
+                <Insets bottom="5.0"/>
+            </VBox.margin>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </StackPane>
+        <StackPane fx:id="pnlShops2" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+                   prefHeight="48.0">
+            <children>
+                <Label fx:id="lblVentas" styleClass="lbl-pnl-add" text="VENTAS" StackPane.alignment="CENTER_LEFT">
+                    <StackPane.margin>
+                        <Insets left="10.0"/>
+                    </StackPane.margin>
+                </Label>
+            </children>
+            <VBox.margin>
+                <Insets bottom="5.0"/>
+            </VBox.margin>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </StackPane>
+        <StackPane fx:id="pnlInventory2" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+                   prefHeight="48.0">
+            <children>
+                <Label fx:id="lblInventory" styleClass="lbl-pnl-add" text="INVENTARIO"
+                       StackPane.alignment="CENTER_LEFT">
+                    <StackPane.margin>
+                        <Insets left="10.0"/>
+                    </StackPane.margin>
+                </Label>
+            </children>
+            <VBox.margin>
+                <Insets bottom="5.0"/>
+            </VBox.margin>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </StackPane>
+        <StackPane maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="116.0"
+                   VBox.vgrow="ALWAYS"/>
+    </children>
+</VBox>

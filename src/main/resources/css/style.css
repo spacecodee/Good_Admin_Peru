@@ -1,0 +1,314 @@
+.parent {
+    -fx-background-color: transparent;
+}
+
+.border-pane {
+    -fx-background-color: #E4E4EA;
+    -fx-background-radius: 20px;
+}
+
+.border-pane-none {
+    -fx-background-color: #E4E4EA;
+    -fx-background-radius: 0px;
+}
+
+.back-color-primary {
+    -fx-background-color: #E4E4EA;
+}
+
+.progress-bar > .track {
+    -fx-text-box-border: transparent;
+    -fx-control-inner-background: #F05454;
+    -fx-border-color: #F05454;
+    -fx-background-color: transparent;
+    -fx-border-width: 2px;
+    -fx-border-radius: 20px;
+    -fx-background-insets: 0;
+    -fx-background-radius: 20px;
+}
+
+@font-face {
+    font-family: "Gilroy ExtraBold";
+    font-style: normal;
+    font-weight: 900;
+    src: url("/fonts/Gilroy-ExtraBold.otf");
+}
+
+@font-face {
+    font-family: "Gilroy Light";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/Gilroy-Light.otf");
+}
+
+
+.font-light {
+    -fx-font-size: 20px;
+    -fx-font-family: "Gilroy Light";
+    -fx-font-weight: 400;
+    -fx-text-fill: #252525;
+}
+
+.font-bold {
+    -fx-font-size: 20px;
+    -fx-font-family: "Gilroy ExtraBold";
+    -fx-font-weight: 900;
+    -fx-text-fill: #252525;
+}
+
+.back-left {
+    -fx-background-color: #0AAF60;
+    -fx-background-radius: 20px 0px 0px 20px;
+    -fx-background-image: url("/img/login/back.png");
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+}
+
+.back-right {
+    -fx-background-color: #E4E4EA;
+    -fx-background-radius: 0px 20px 20px 0px;
+}
+
+.fields {
+    -fx-background-color: #E4E4EA;
+    -fx-background-radius: 20px;
+
+    -fx-border-color: #0AAF60;
+    -fx-border-radius: 20px;
+    -fx-border-width: 2px;
+
+    -fx-padding: 10px 20px 10px 40px;
+
+    -fx-font-family: "Gilroy ExtraBold";
+    -fx-text-fill: #252525;
+    -fx-prompt-text-fill: #5d5c5c;
+    -fx-font-weight: 900;
+    -fx-font-size: 20px;
+}
+
+.btn-login {
+    -fx-background-color: #0AAF60;
+    -fx-background-radius: 20px;
+
+    -fx-border-insets: 0;
+
+    -fx-padding: 10px 20px 10px 40px;
+
+    -fx-font-family: "Gilroy ExtraBold";
+    -fx-text-fill: #E4E4EA;
+    -fx-font-weight: 900;
+    -fx-font-size: 20px;
+
+    -fx-effect: dropshadow(three-pass-box, rgba(10, 175, 96, 0.5), 15, 0.1, 10, 10);
+}
+
+.btn-login:hover {
+    -fx-background-color: #ec4646;
+    -fx-effect: dropshadow(three-pass-box, rgba(236, 70, 70, 0.5), 15, 0.1, 10, 10);
+}
+
+.btn-login:pressed {
+    -fx-background-color: #0AAF60;
+    -fx-effect: dropshadow(three-pass-box, rgba(10, 175, 96, 0.5), 15, 0.1, 10, 10);
+}
+
+.label-pass-forword {
+    -fx-font-family: "Gilroy Light";
+    -fx-text-fill: #0AAF60;
+    -fx-font-weight: 400;
+    -fx-font-size: 18px;
+}
+
+.label-normal {
+    -fx-font-family: "Gilroy Light";
+    -fx-text-fill: #252525;
+    -fx-font-weight: 400;
+    -fx-font-size: 18px;
+}
+
+.btn-google {
+    -fx-background-color: #F3F4F5;
+    -fx-background-radius: 20px;
+
+    -fx-border-insets: 0;
+
+    -fx-font-family: "Gilroy ExtraBold";
+    -fx-text-fill: #252525;
+    -fx-font-weight: 900;
+    -fx-font-size: 18px;
+}
+
+.btn-google:hover {
+    -fx-background-color: #dbdee0;
+}
+
+.icon-google {
+    -fx-fill: #252525;
+}
+
+.btn-face {
+    -fx-background-color: #1122B5;
+    -fx-background-radius: 20px;
+
+    -fx-border-insets: 0;
+
+    -fx-font-family: "Gilroy ExtraBold";
+    -fx-text-fill: #E4E4EA;
+    -fx-font-weight: 900;
+    -fx-font-size: 18px;
+}
+
+.btn-face:hover {
+    -fx-background-color: #3343cd;
+}
+
+.icon-face {
+    -fx-fill: #E4E4EA;
+}
+
+.btn-face, .btn-google {
+    -fx-padding: 8px 20px 8px 40px;
+}
+
+.btn-acept {
+    -fx-background-color: #F4F9F9;
+    -fx-background-radius: 20px;
+
+    -fx-border-color: #0AAF60;
+    -fx-border-radius: 20px;
+    -fx-border-width: 2px;
+
+    -fx-padding: 10px 40px 10px 40px;
+
+    -fx-font-family: "Gilroy Light";
+    -fx-text-fill: #252525;
+    -fx-font-weight: 400;
+    -fx-font-size: 18px;
+}
+
+.btn-acept:hover {
+    -fx-background-color: #0AAF60;
+    -fx-background-radius: 20px;
+
+    -fx-font-family: "Gilroy Light";
+    -fx-text-fill: #252525;
+    -fx-font-weight: 400;
+    -fx-font-size: 18px;
+}
+
+.modal {
+    -fx-background-color: #F4F9F9;
+    -fx-background-radius: 20px;
+}
+
+.label-modal {
+    -fx-font-family: "Gilroy ExtraBold";
+    -fx-text-fill: #252525;
+    -fx-font-weight: 900;
+    -fx-font-size: 24px;
+}
+
+.label-err {
+    -fx-font-family: "Gilroy Light";
+    -fx-text-fill: #EC4646;
+    -fx-font-weight: 400;
+    -fx-font-size: 18px;
+}
+
+.btn-toggle {
+    -fx-background-color: #0AAF60;
+    -fx-background-radius: 20px;
+
+    -fx-padding: 10px 40px 10px 40px;
+
+    -fx-font-family: "Gilroy Light";
+    -fx-text-fill: #E4E4EA;
+    -fx-font-weight: 400;
+    -fx-font-size: 18px;
+}
+
+.icons {
+    -fx-fill: #0B0A0C;
+    -fx-font-size: 10px;
+}
+
+.pnl-lateral {
+    -fx-background-color: #F6F3F5;
+    -fx-background-radius: 0px 0px 0px 20px;
+}
+
+.pnl-top {
+    -fx-background-color: #F6F3F5;
+    -fx-background-radius: 20px 20px 0px 0px;
+}
+
+.pnls-lateral {
+    -fx-effect: dropshadow(three-pass-box, rgba(37, 37, 37, 0.8), 10, 0, 10, 10);
+}
+
+.pnls-lateral:hover {
+    -fx-border-color: #0AAF60;
+    -fx-border-width: 0px 0px 0px 4px;
+}
+
+.lbl-pnl-add {
+    -fx-font-family: "Gilroy ExtraBold";
+    -fx-text-fill: #252525;
+    -fx-font-weight: 900;
+    -fx-font-size: 16px;
+}
+
+.pane-content {
+    -fx-background-color: #E4E4EA;
+}
+
+.axis {
+    -fx-font-size: 20px;
+    -fx-tick-label-fill: #252525;
+    -fx-font-family: "Gilroy ExtraBold";
+    -fx-font-weight: 900;
+}
+
+.chart-pie-border {
+
+}
+
+.default-color0.chart-pie {
+    -fx-pie-color: #0AAF60;
+    -fx-border-width: 0;
+    -fx-border-color: #252525;
+}
+
+.default-color1.chart-pie {
+    -fx-pie-color: #252525;
+    -fx-border-width: 0;
+    -fx-border-color: #252525;
+}
+
+.default-color2.chart-pie {
+    -fx-pie-color: #EC4646;
+    -fx-border-width: 0;
+    -fx-border-color: #252525;
+}
+
+.default-color3.chart-pie {
+    -fx-pie-color: #BBE7D4;
+    -fx-border-width: 0;
+    -fx-border-color: #252525;
+}
+
+.chart-pie-label {
+    -fx-fill: #0AAF60;
+    -fx-stroke: #0AAF60;
+    -fx-font-size: 16px;
+}
+
+.chart-pie-label-line {
+    -fx-fill: #0AAF60;
+    -fx-stroke: #0AAF60;
+}
+
+.pnl-dash-content {
+    -fx-background-color: #EFECEE;
+    -fx-background-radius: 20px;
+}
